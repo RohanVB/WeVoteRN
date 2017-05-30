@@ -6,10 +6,10 @@ import {
   View
 } from 'react-native';
 
-import Search from './src/Components/Search'
-import HeaderTitle from './src/Components/Header'
-import Social from './src/Components/Social'
-import IntroText from './src/Components/IntroText'
+import Search from './src/components/Search'
+import HeaderTitle from './src/components/Header'
+import Social from './src/components/Social'
+import IntroText from './src/components/IntroText'
 
 class WeVoteRN extends Component{
     render(){
