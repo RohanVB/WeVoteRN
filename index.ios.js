@@ -1,27 +1,25 @@
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { AppRegistry } from 'react-native';
+import { DrawerNavigator } from 'react-navigation';
 
-import Search from './src/components/Search'
-import HeaderTitle from './src/components/Header'
-import Social from './src/components/Social'
-import IntroText from './src/components/IntroText'
+import App from './src/scenes/Main/App'
+import AboutUs from './src/scenes/Main/scenes/AboutUs'
 
 class WeVoteRN extends Component{
+    
     render(){
+      
+      const { navigation } = this.props;
       return (
-        <View>
-        <Search/>
-        <HeaderTitle headerText = {'Your Account'}/>
-        <Social/>
-        </View>
+        <App />
           );
   }
 }
 
+const SimpleApp = DrawerNavigator({
+  Home: {screen: App},
+  About: { screen: AboutUs}
+});
 
-AppRegistry.registerComponent('WeVoteRN', () => WeVoteRN);
+
+AppRegistry.registerComponent('WeVoteRN', () => SimpleApp);
