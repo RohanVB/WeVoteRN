@@ -9,7 +9,7 @@ import {
 import Search from '../../components/Search'
 import HeaderTitle from '../../components/Header'
 import Social from '../../components/Social'
-import IntroText from '../../components/IntroText'
+
 
 class App extends Component{
     render(){
@@ -27,7 +27,7 @@ App.navigationOptions = {
   drawer: {
       icon: () => (
         <Image
-          //source={require('../imgs/home.png')}
+          source={require('../../../imgs/home.png')}
           style={[styles.tabIcon, {tintColor: 'black'}]}
         />
   )}
